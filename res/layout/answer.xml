@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="QUIZ 1"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textStyle="bold"
+            android:textColor="#FFFF" 
+        android:layout_margin="15dp"
+        android:gravity="center"
+             />
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           	android:text="1.A\n2.D\n3.A\n4.B\n5.B\n6.B\n7.D\n8.C\n9.B\n10.A\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        	android:layout_marginLeft="35dp"
+             />
+         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="QUIZ 2"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textStyle="bold"
+            android:textColor="#FFFF" 
+        android:layout_margin="15dp"
+        android:gravity="center"
+             />
+         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           	android:text="1.C\n2.D\n3.A\n4.C\n5.A\n6.B\n7.C\n8.D\n9.C\n10.B\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        	android:layout_marginLeft="35dp"
+             />
+         <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="QUIZ 3"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textStyle="bold"
+            android:textColor="#FFFF" 
+        android:layout_margin="15dp"
+        android:gravity="center"
+             />
+         <TextView
+            android:id="@+id/textView6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           	android:text="1.D\n2.B\n3.B\n4.C\n5.B\n6.B\n7.B\n8.B\n9.B\n10.C\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        	android:layout_marginLeft="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+		 <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:text="Basic types: char, int, float, and double\nint i; (Integer)\nint *j, k;	(j: pointer to integer, int k)\nunsigned char *ch;  (ch: pointer to unsigned char)\nfloat f[10];  (Array of 10 floats)\nchar nextChar(int, char*);  (2-argument fucntion)\nint a[3][5][10];  (3-d array)\nint *func1(float);  (function returning int  *)\nint (*func2)(void);  (pointer to function returning int).\nOther data types are bool,long int,long long int,long double,long long double.
+How they are useful we will study in next section.
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />
+		
+    </LinearLayout>
+</ScrollView>

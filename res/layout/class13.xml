@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="#include&#60;stdio.h&#62;\nstruct node{\n    int pri;\n    struct node* link;\n    int data;\n};\nvoid create(int data,int prio,struct node **front,struct node **rear){\n    struct node *temp;\n    temp=(struct node*)(malloc(sizeof(struct node)));\n    temp-&#62;pri=prio;\n    temp-&#62;link=NULL;\n    temp-&#62;data=data;\n    if(*front==NULL){\n        (*front)=temp;(*rear)=temp;\n    }\n    else if(temp-&#62;pri&#62;=(*rear)-&#62;pri){\n        (*rear)-&#62;link=temp;\n        (*rear)=temp;\n    }\n    else{add(data,prio,&#38;front,&#38;rear);}\n}\nvoid add(int data,int prio,struct node **front,struct node **rear){\n    struct node *temp;\n     temp=(struct node*)(malloc(sizeof(struct node)));\n    temp-&#62;pri=prio;\n    temp-&#62;link=NULL;temp-&#62;data=data;\n    if(*front==NULL){\n        (*front)=temp;(*rear)=temp;\n    }\n    else{\n        struct node *t=*front;\n        while((t-&#62;link!=NULL)&#38;&#38;(t-&#62;link&#62;pri&#60;=temp-&#62;pri))\n            t=t-&#62;link;\n        temp-&#62;link=t-&#62;link;\n        t-&#62;link=temp;\n    }\n}\nvoid delete(struct node **front,struct node **rear){\n    if(*front==NULL&#38;&#38;*rear==NULL){\n    printf(&quot;empty&quot;);return;}\n    else{struct node *temp=*front;\n        printf(&quot;delete=%d&quot;,(*front)-&#62;data);\n        (*front)=(*front)-&#62;link;\n        free(temp);\n    }\n}\nvoid display(struct node **front,struct node **rear){\n    struct node *temp=*front;\n    while(temp!=NULL){\n        printf(&quot;%d,%d-&#62;&quot;,temp-&#62;pri,temp-&#62;data);\n        temp=temp-&#62;link;\n    }\n}\nint main(){\n    struct node *front=NULL,*rear=NULL;int m,p=0;\n    do{printf(&quot;ENTER CHOICE:  &quot;);\n    printf(&quot;1.create2.add3.delete4.display&quot;);int d;\n    scanf(&quot;%d&quot;,&#38;d);\n    switch(d){\n        case 1:{int da,pq;\n                printf(&quot;Enter data and priority&quot;);\n                scanf(&quot;%d%d&quot;,&#38;da,&#38;pq);\n                create(da,pq,&#38;front,&#38;rear);break;}\n        case 2:{int da,p1;\n                scanf(&quot;%d%d&quot;,&#38;da,&#38;p1);\n                add(da,p1,&#38;front,&#38;rear);break;}\n        case 3:delete(&#38;front,&#38;rear);break;\n        case 4:display(&#38;front,&#38;rear);break;\n    }\n    printf(&quot;Press 0 to exit!&quot;);\n    scanf(&quot;%d&quot;,&#38;m);\n    }while(m!=0);\n}"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"/>
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

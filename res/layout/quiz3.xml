@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="TIME LIMIT\n10 MINUTES"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textStyle="bold"
+            android:textColor="#F712" 
+        android:layout_margin="35dp"
+        android:gravity="center"
+             />
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="1.How many times the program will print &quot;CODECLASSSES&quot; ?\n#include&lt;stdio.h&gt;\nint main(){\nprintf(&quot;CODECLASSES&quot;);\nmain();\nreturn 0;\n}\n"
+        android:layout_margin="35dp"
+        android:gravity="center_vertical"
+        android:textColor="#FFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	Infinite times	\nB.	32767 times\nC.	65535 times	\nD.	Till stack overflows\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="2.What will be the output of the program?\n#include&lt;stdio.h&gt;\nint main(){\n void fun(char*);\nchar a[100];\na[0] = 'A'; a[1] = 'B';\na[2] = 'C'; a[3] = 'D';\nfun(&amp;a[0]);\nreturn 0;\n}\nvoid fun(char *a){\na++;\nprintf(&quot;%c&quot;, *a);\na++;\nprintf(&quot;%c&quot;, *a);\n}\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	AB\nB.	BC\nC.	CD\nD.	No output\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="3.In C all functions except main() can be called recursively.\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	True\nB.	False\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="4.Which of the following statements are correct about the function?\nlong fun(int num){\nint i;\nlong f=1;\n for(i=1; i&lt;=num; i++)\nf = f * i;\nreturn f;\n}\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	The function calculates the value of 1 raised to power num.\nB.	The function calculates the square root of an integer\nC.	The function calculates the factorial value of an integer\nD.	None of above\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="5.Which header file should be included to use functions like malloc() and calloc()?\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	memory.h\nB.	stdlib.h\nC.	string.h\nD.	dos.h\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6.What will be the output of the program (16-bit platform)?\n#include&lt;stdio.h&gt;\n#include&lt;stdlib.h&gt;\nint main(){\nint *p;\np = (int *)malloc(20);\nprintf(&quot;%d&quot;, sizeof(p));\nfree(p);\nreturn 0;\n}\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	4	\nB.	2\nC.	8	\nD.	Garbage value\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="7.Point out the error in the following program.\n#include&lt;stdio.h&gt;\n#include&lt;stdlib.h&gt;\nint main(){\nchar *ptr;\n*ptr = (char)malloc(30);\nstrcpy(ptr, &quot;RAM&quot;);\nprintf(&quot;%s&quot;, ptr);\nfree(ptr);\nreturn 0;\n}\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	Error: in strcpy() statement.\nB.	Error: in *ptr = (char)malloc(30);\nC.	Error: in free(ptr);\nD.	No error\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="8.What will be the output of the program ?\n#include&lt;stdio.h&gt;\nint main(){\nunion var{\nint a, b;\n};\nunion var v;\nv.a=10;\nv.b=20;\nprintf(&quot;%d\n&quot;, v.a);\nreturn 0;\n}\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	10	\nB.	20\nC.	30	\nD.	0\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="9.What will you do to treat the constant 3.14 as a long double?\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	use 3.14LD	\nB.	use 3.14L\nC.	use 3.14DL	\nD.	use 3.14LF\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="10.What do the 'c' and 'v' in argv stands for?\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	'c' means argument control 'v' means argument vector\nB.	'c' means argument count 'v' means argument vertex\nC.	'c' means argument count 'v' means argument vector\nD.	'c' means argument configuration 'v' means argument visibility"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >   
+		 <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:text="In kruskal algorithm,follow these steps to find minimum spanning tree.\nStep 1:-First edge: choose any edge with the minimum weight.\nStep 2:-Next edge: choose any edge with minimum weight from those not yet selected.  (The subgraph can look disconnected at this stage.)\nStep 3:-Continue to choose edges of minimum weight from those not yet selected, except do not select any edge that creates a cycle in the subgraph.\nStep 4:-Repeat step 3 until the subgraph connects all vertices of the original graph."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />      
+    </LinearLayout>
+</ScrollView>

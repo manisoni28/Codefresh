@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="appic.example.codefresh"
+    android:versionCode="5"
+    android:versionName="1.2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+ 
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yoo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+    
+        
+   <activity
+            android:name=".Splash"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="CODEFRESH"
+         >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".algo"
+            android:label="ALGORITHM" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.ALGO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+          android:theme="@android:style/Theme" />
+
+<activity android:name="com.startapp.android.publish.OverlayActivity"
+          android:theme="@android:style/Theme.Translucent"
+          android:configChanges="orientation|keyboardHidden|screenSize" />
+
+<activity android:name="com.startapp.android.publish.FullScreenActivity"
+          android:theme="@android:style/Theme"
+          android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".basic"
+            android:label="BASICS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BASIC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".classical"
+            android:label="DATA STRUCTURE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLASSICAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".competative"
+            android:label="TEST" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.COMPETATIVE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menutbasic"
+            android:label="BASICS MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.MENUTBASIC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Introduction"
+            android:label="INTRODUCTION" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.INTRODUCTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".basiclist"
+            android:label="BASICS MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BASICLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cmenu"
+            android:label="DATA STRUCTURE MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Clinku"
+            android:label="LINKED LIST" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLINKU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Aa"
+            android:label="FIRST C PROGRAM" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ab"
+            android:label="DECLARE AND PRINT" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ac"
+            android:label="PRINT NATURAL NUMBERS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ad"
+            android:label="SUM AND AVERAGE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ae"
+            android:label="PRIME" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Af"
+            android:label="ARMSTRONG" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ag"
+            android:label="REVERSE A NUMBER" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ah"
+            android:label="PALINDROME" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ai"
+            android:label="FIBONACCI" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Aj"
+            android:label="FUNCTIONS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AJ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ak"
+            android:label="GREATEST COMMON DIVISOR" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Al"
+            android:label="FACTORIAL" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Am"
+            android:label="ARRAY" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".An"
+            android:label="2-D ARRAY" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ao"
+            android:label="ARRAYS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ap"
+            android:label="CONDITIONAL STATEMENTS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Aq"
+            android:label="DATA TYPES" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AQ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ar"
+            android:label="EXPRESSIONS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".As"
+            android:label="FUNCTIONS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".At"
+            android:label="LINKED LIST" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Au"
+            android:label="LOOPS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Av"
+            android:label="MEMORY &amp; VARIABLES" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AV" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Aw"
+            android:label="POINTERS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ax"
+            android:label="FIRST C PROGRAM" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AX" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ay"
+            android:label="STRUCTURES" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Az"
+            android:label="INTRODUCTION" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.AZ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><activity
+            android:name=".Ba"
+            android:label="TYPE CASTING" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bb"
+            android:label="VARIABLE TYPE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bc"
+            android:label="SEARCHING" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Bd"
+            android:label="SORTING" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Be"
+            android:label="STACKS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bf"
+            android:label="QUEUE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Bg"
+            android:label="CIRCULAR QUEUE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bh"
+            android:label="TREE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Bi"
+            android:label="HEAP AND PRIORITY QUEUE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".cl9"
+            android:label="LINKED LIST" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CL9" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".cla1"
+            android:label="LINEAR SEARCH" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla2"
+            android:label="BINARY SEARCH" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla3"
+            android:label="SELECTION SORT" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla4"
+            android:label="BUBBLE SORT" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla5"
+            android:label="INSERTION SORT" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla6"
+            android:label="QUICK SORT" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla7"
+            android:label="MERGE SORT" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla8"
+            android:label="STRUCTURE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA8" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla10"
+            android:label="STACK" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA10" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla11"
+            android:label="QUEUE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA11" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla12"
+            android:label="CIRCULAR QUEUE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA12" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla13"
+            android:label="PRIORITY QUEUE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA13" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla14"
+            android:label="HEAP" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA14" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cla15"
+            android:label="TREE" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLA15" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".classicallist"
+            android:label="DATA STRUCTURE MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.CLASSICALLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bj"
+            android:label="QUIZ 1" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BJ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bk"
+            android:label="QUIZ 2" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bl"
+            android:label="QUIZ 3" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bm"
+            android:label="ANSWERS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bn"
+            android:label="DEPTH FIRST SEARCH" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bo"
+            android:label="BREADTH FIRST SEARCH" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bp"
+            android:label="MODULAR EXPONENTIATION" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bq"
+            android:label="CHINESE REMAINDER" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BQ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Br"
+            android:label="FLOYD WARSHALL" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bs"
+            android:label="PRIMS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bt"
+            android:label="KRUSKAL" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bu"
+            android:label="DIJKSTRA" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Algotmenu"
+            android:label="ALGORITHM MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.ALGOTMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bno"
+            android:label="DEPTH FIRST SEARCH" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BNO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Boo"
+            android:label="BREADTH FIRST SEARCH" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BOO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bpo"
+            android:label="MODULAR EXPONENTIATION" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BPO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bqo"
+            android:label="CHINESE REMAINDER" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BQO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bro"
+            android:label="FLOYD WARSHALL" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BRO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bso"
+            android:label="PRIMS" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BSO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bto"
+            android:label="KRUSKAL" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Buo"
+            android:label="DIJKSTRA" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.BUO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Algopmenu"
+            android:label="ALGORITHM MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.ALGOPMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tmenu"
+            android:label="QUIZ MENU" >
+            <intent-filter>
+                <action android:name="appic.example.codefresh.TMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+        
+    </application>
+
+</manifest>

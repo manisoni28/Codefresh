@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include &lt;iostream&gt;\n2.#define ll long long\n3.using namespace std;\n4.ll modular_pow(ll base, ll exponent, int modulus){\n5.ll result = 1;\n6.while (exponent &gt; 0){\n7.if (exponent % 2 == 1)\n8.result = (result * base) % modulus;\n9.exponent = exponent &gt;&gt; 1;\n10.base = (base * base) % modulus;\n11.}\nreturn result;\n12.}\n13.int main(){\n14.ll x, y;\n15.int mod;\n16.cout&lt;&lt;&quot;Enter Base Value: &quot;;\n17.cin&gt;&gt;x;\n18.cout&lt;&lt;&quot;Enter Exponent: &quot;;\n19.cin&gt;&gt;y;\nc20.out&lt;&lt;&quot;Enter Modular Value: &quot;;\n21.cin&gt;&gt;mod;\n22.cout&lt;&lt;modular_pow(x, y , mod);\n23.return 0;\n24.}" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

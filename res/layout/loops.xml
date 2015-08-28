@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="What is loop?\nWhy it is used for.??\nBasically in Coding loops have lot of importance.\nFor example if you want to scan 1000 nmbers and you will be doing so by taking 1000 variables,then definately it would be very difficult,So then comes loops in picture.\nThere are two types of loops:\n1.for() loop which is having a syntax as for(i=initial value;i&lt;=final value;i++) which means if you want 100 numbers to be scan then consider initial value as 1 and final as 100.\n2.while() loop which is having a syntax while(base condition){\n}\nwhich means that you have to input that value as a agrument which you would like to stop the loop.\nYou will see a majority of questions based on looping in our program section.\n "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

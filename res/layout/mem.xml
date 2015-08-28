@@ -1,0 +1,24 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">"
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="What is “Memory”?\nMemory is like a big table of numbered slots where bytes can be stored.\nThe number of a slot is its Address.
+One byte Value can be stored in each slot.\nSome “logical” data values span more than one slot, like the character string “Hello\n”\nA Type names a logical meaning to a span of memory.\nWhat is a Variable?\nA Variable names a place in memory where you store a Value of a certain Type.
+char x;
+char y=‘e’;\nHere e is the intial value of y which is of type char "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

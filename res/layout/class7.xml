@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+ <TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="1.#include&#60;stdio.h&#62;\n2.void mergesort(int a[],int low,int up){\n3.    int mid,temp[1002];\n4.    if(low&#60;up){\n5.        mid=(low+up)/2;\n6.        mergesort(a,low,mid);\n7.        mergesort(a,mid+1,up);\n8. merge(a,temp,low,mid,mid+1,up);\n9.        copy(a,temp,low,up);\n10.    }\n11.}\n12.void merge(int a[],int temp[],int l1,int u1,int l2,int u2){\n13.    int i=l1,j=l2,k=l1;\n14.        while((i&#60;=u1)&#38;&#38;(j&#60;=u2)){\n15.            if(a[i]&#60;=a[j])\n16.                temp[k++]=a[i++];\n17.            else{\n18.                temp[k++]=a[j++];}\n19.        }\n20.        while(i&#60;=u1)\n21.        temp[k++]=a[i++];\n22.        while(j&#60;=u2)\n23.        temp[k++]=a[j++];\n24.}\n25.void copy(int a[],int temp[],int l,int u){\n26.    int i;\n27.    for(i=l;i&#60;=u;i++)\n28.    a[i]=temp[i];\n29.}\n30.int main(){\n31.    int i,j,n;\n32.scanf(&quot;%d&quot;,&#38;n);\n33.int a[100002]={0};\n34.    for(i=0;i&#60;n;i++)\n35.    scanf(&quot;%d&quot;,&#38;a[i]);\n36.    int low=0,up=n-1;\n37.    mergesort(a,low,up);\n38.    for(i=0;i&#60;n;i++)\n39.        printf(&quot;%d &quot;,a[i]);\n40.    return 0;\n41.}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

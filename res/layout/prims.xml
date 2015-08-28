@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include&lt;stdio.h&gt;\n2.#include&lt;conio.h&gt;\n3.int n, cost[10][10];\n4.void prim() {\n5.int i, j, startVertex, endVertex;\n6.int k, nr[10], temp, minimumCost = 0, tree[10][3];\n7./* For first smallest edge */\n8.temp = cost[0][0];\n9.for (i = 0; i &lt; n; i++){\n10.for (j = 0; j &lt; n; j++){\n11.if (temp &gt; cost[i][j]) {\n12.temp = cost[i][j];\n13.startVertex = i;\n14.endVertex = j;\n15.}\n}\n}\n16./* Now we have fist smallest edge in graph */\n17.tree[0][0] = startVertex;\n18.tree[0][1] = endVertex;\n19.tree[0][2] = temp;\n20.minimumCost = temp; \n21./* Now we have to find min dis of each vertex from either startVertex or endVertex by initialising nr[] array*/\n22.for (i = 0; i &lt; n; i++) {\n23.if (cost[i][startVertex] &lt; cost[i][endVertex])\n24.nr[i] = startVertex;\n25.else\n26.nr[i] = endVertex;\n27.}\n28./* To indicate visited vertex initialise nr[] for them to 100 */\n29.nr[startVertex] = 100;\n30.nr[endVertex] = 100;\n31./* Now find out remaining n-2 edges */\ntemp = 99;\n32.for (i = 1; i &lt; n - 1; i++) {\n33.for (j = 0; j &lt; n; j++) {\n34.if (nr[j] != 100 &amp;&amp; cost[j][nr[j]] &lt; temp) {\n35.temp = cost[j][nr[j]];\nk = j;\n}\n36.}\n37./* Now i have got next vertex */\ntree[i][0] = k;\n38.tree[i][1] = nr[k];\n39.tree[i][2] = cost[k][nr[k]];\n40.minimumCost = minimumCost + cost[k][nr[k]];\n41.nr[k] = 100;\n42./* Now find if k is nearest to any vertex than its previous near value */\n43.for (j = 0; j &lt; n; j++) {\n44.if (nr[j] != 100 &amp;&amp; cost[j][nr[j]] &gt; cost[j][k])\n45.nr[j] = k;\n46.}\n47.temp = 99;\n48.}\n49./* Now i have the answer, just going to print it */\n50.printf(&quot;\\nThe min spanning tree is:- &quot;);\n51.for (i = 0; i &lt; n - 1; i++) {\n52.for (j = 0; j &lt; 3; j++)\n54.printf(&quot;%d&quot;, tree[i][j]);\n55.printf(&quot;\\n&quot;);\n}\n56.printf(&quot;\\nMin cost : %d&quot;, minimumCost);\n57.}\n58.void main() {\n59.int i, j;\n60.clrscr();\n61.printf(&quot;\\nEnter the no. of vertices :&quot;);\n62.scanf(&quot;%d&quot;, &amp;n); \n63.printf(&quot;\\nEnter the costs of edges in matrix form :&quot;);\n64.for (i = 0; i &lt; n; i++)\n65.for (j = 0; j &lt; n; j++) {\n66.scanf(&quot;%d&quot;, &amp;cost[i][j]);\n67.}\n68.printf(&quot;\\nThe matrix is : &quot;);\n69.for (i = 0; i &lt; n; i++) {\n70.for (j = 0; j &lt; n; j++) {\n71.printf(&quot;%d\\t&quot;, cost[i][j]);\n72.}\n73.printf(&quot;\\n&quot;);\n74.}\n75.prim();\n76.getch();\n77.}
+" 
+android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

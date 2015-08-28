@@ -1,0 +1,32 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">"
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="The problem with the simple implementation of queue is that the insert function gives a queue-full signal even if a considerable portion is free. This happens because the queue has a tendency to move to the right unless the ‘front’ catches up with the ‘rear’ and both are reset to 0 again (in the delete procedure). To overcome this problem, the elements of the array are required to shift one position left whenever a deletion is made. But this will make the deletion process inefficient. Therefore, an efficient way of overcoming this problem is to consider the array to be circular, as shown"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+         <ImageView
+		      android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/cqueue" 
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+    </LinearLayout>
+</ScrollView>

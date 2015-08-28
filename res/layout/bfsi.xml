@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include&lt;stdio.h&gt;\n2.#include&lt;conio.h&gt;\n3.int a[20][20],q[20],visited[20],n,i,j,f=0,r=-1;\n4.void bfs(int v){\n5.for(i=1;i&lt;=n;i++)\n6.if(a[v][i] &amp;&amp; !visited[i])\n7.q[++r]=i;\nif(f&lt;=r){\n8.visited[q[f]]=1;\n9.bfs(q[f++]);\n10.}\n11.}\n12.void main(){\n13.int v;\n14.clrscr();\n15.printf(&quot;\\n Enter the number of vertices:&quot;);\n16.scanf(&quot;%d&quot;,&amp;n);\n17.for(i=1;i&lt;=n;i++){\n18.q[i]=0;\n19.visited[i]=0;\n20.}\n21.printf(&quot;\\n Enter graph data in matrix form:\\n&quot;);\n22.for(i=1;i&lt;=n;i++)\n23.for(j=1;j&lt;=n;j++)\n24.scanf(&quot;%d&quot;,&amp;a[i][j]);\n25.printf(&quot;\\n Enter the starting vertex:&quot;);\n26.scanf(&quot;%d&quot;,&amp;v);\n27.bfs(v);\n28.printf(&quot;\\n The node which are reachable are:\\n&quot;);\n29.for(i=1;i&lt;=n;i++)\n30.if(visited[i])\n31.printf(&quot;%d\\t&quot;,i);\n32.else\n33.printf(&quot;\\n Bfs is not possible&quot;);\n35.}
+ " android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

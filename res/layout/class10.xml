@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="#include&#60;stdio.h&#62;\nint arr[100],top=-1;\nvoid push(int a){\n    if(top==100)\n        printf(&quot;FULL.&quot;);\n    else\n        arr[++top]=a;\n}\nint pop(){\n    if(top==-1)\n        printf(&quot;EMPTY.&quot;);\n    else\n        return arr[top--];\n}\nvoid display(){\n    int i;\n    for(i=0;i&#60;=top;i++)\n        printf(&quot;%d &quot;,arr[i]);\n}\nint main(){\n    int ch,d,k;\n    printf(&quot;Enter 1 to start&quot;);\n    scanf(&quot;%d&quot;,&#38;k);\n    do{\n        printf(&quot;1.push2.pop3.display&quot;);\n        printf(&quot;Enter choice&quot;);\n        scanf(&quot;%d&quot;,&#38;ch);\n        switch(ch){\n    case 1:\n        printf(&quot;Enter data&quot;);\n        scanf(&quot;%d&quot;,&#38;d);\n        push(d);\n        break;\n    case 2:pop();\n    case 3:display();\n    }\n    printf(&quot;Enter 0 to exit!&quot;);\n    scanf(&quot;%d&quot;,&#38;k);\n    }while(k!=0);\n}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

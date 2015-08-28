@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include &lt;stdio.h&gt;\n2.int mul_inv(int a, int b){\n3.int b0 = b, t, q;\n4.int x0 = 0, x1 = 1;\n5.if (b == 1) return 1;\n6.while (a &gt; 1) {\n7.q = a / b;\n8.t = b, b = a % b, a = t;\n9.t = x0, x0 = x1 - q * x0, x1 = t;\n10.}\n11.if (x1 &lt; 0) x1 += b0;\n12.return x1;\n13.}\n14.int chinese_remainder(int *n, int *a, int len){\n15.int p, i, prod = 1, sum = 0;\n16.for (i = 0; i &lt; len; i++) prod *= n[i];\n17.for (i = 0; i &lt; len; i++) {\np = prod / n[i];\n18.sum += a[i] * mul_inv(p, n[i]) * p;\n19.}\n20.return sum % prod;\n21.}\n22.int main(){\n23.int n[] = { 3, 5, 7 };\n24.int a[] = { 2, 3, 2 };\n26.printf(&quot;%d\\n&quot;, chinese_remainder(n, a, sizeof(n)/sizeof(n[0])));\n27.return 0;\n28.}" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

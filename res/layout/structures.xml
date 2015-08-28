@@ -1,0 +1,23 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="For dealing with collections of different data types, C provides a data type called ‘structure’. A structure gathers together, different atoms of information that comprise a given entity.Let us take an example how to use structures and how to implement them.\nmain( ){\nchar  n[3] ;\nfloat  p[3] ;\nint  pa[3], i ;\nprintf(&quot;Enter names, prices and no. of pages of 3 books&quot;);\nfor ( i = 0 ; i &lt;= 2 ; i++ )\nscanf ( &quot;%c %f %d&quot;, &#38;n[i], &#38;p[i], &#38;pa[i] );\nprintf ( &quot;\nAnd this is what you entered\n&quot; ) ;\nfor ( i = 0 ; i &lt;= 2 ; i++ )\nprintf ( &quot;%c %f %d\n&quot;, n[i], p[i], pa[i] );\n}\n  
+And here is the sample run...  
+Enter names, prices and no. of pages of 3 books \nA  200.0  394 \nC  286.50  782 \nF  233.750  512 \nAnd this is what you entered \nA  200.000000  394 \nC  286.500000  782 \nF  233.750000  512 \n"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

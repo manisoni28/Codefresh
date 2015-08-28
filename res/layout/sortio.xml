@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Sorting is very important technique.As if you want array elements to be in ascending o descending order then you may use sorting technique.There are many sorting techniques some are listed beow.Just click on the buttons and explore them how they work."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+      
+             />
+
+        <Button
+            android:id="@+id/sels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="SELECTION SORT"
+               android:layout_gravity="center"  
+             />
+        <Button
+            android:id="@+id/ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="INSERTION SORT"
+                   android:layout_gravity="center"
+             />
+        <Button
+            android:id="@+id/mers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="MERGE SORT"
+            android:layout_gravity="center"
+           
+             />
+        <Button
+            android:id="@+id/qucs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="QUICK SORT"
+    		android:layout_gravity="center" 
+    		android:layout_marginBottom="15dp"/>
+       
+    </LinearLayout>
+</ScrollView>

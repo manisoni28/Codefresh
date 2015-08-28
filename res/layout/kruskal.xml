@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include&lt;stdio.h&gt;\n2.#include&lt;conio.h&gt;\n3.#include&lt;stdlib.h&gt;\n4.int i,j,k,a,b,u,v,n,ne=1;\n5.int min,mincost=0,cost[9][9],parent[9];\n6.int find(int);\n7.int uni(int,int);\n8.void main(){\n9.clrscr();\n10.printf(&quot;\\n\\n\\tImplementation of Kruskal's algorithm\\n\\n&quot;);\n11.printf(&quot;\\nEnter the no. of vertices\\n&quot;);\n12.scanf(&quot;%d&quot;,&amp;n);\n13.printf(&quot;\\nEnter the cost adjacency matrix\\n&quot;);\n14.for(i=1;i&lt;=n;i++){\n15.for(j=1;j&lt;=n;j++){\n16.scanf(&quot;%d&quot;,&amp;cost[i][j]);\n17.if(cost[i][j]==0)\n18.cost[i][j]=999;\n19.}\n20.}\n21.printf(&quot;\\nThe edges of Minimum Cost Spanning Tree are\\n\\n&quot;);\n22.while(ne&lt;n){\n23.for(i=1,min=999;i&lt;=n;i++){\n24.for(j=1;j&lt;=n;j++){\n25.if(cost[i][j]&lt;min){\n26.min=cost[i][j];\n27.a=u=i;\n28.b=v=j;\n29.}\n30.}\n31.}\n32.u=find(u);\n33.v=find(v);\n34.if(uni(u,v)){\n35.printf(&quot;\\n%d edge (%d,%d) =%d\\n&quot;,ne++,a,b,min);\n36.mincost +=min;\n37.}\n38.cost[a][b]=cost[b][a]=999;\n39.}\nprintf(&quot;\\n\\tMinimum cost = %d\\n&quot;,mincost);\n40.getch();\n41.}\n42.int find(int i){\n43.while(parent[i])\n44.i=parent[i];\n45.return i;\n46.}\nint uni(int i,int j){\n47.if(i!=j){\n48.parent[j]=i;\n49.return 1;\n50.}\n51.return 0;\n52.}" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

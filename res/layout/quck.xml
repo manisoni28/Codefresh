@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="As the name implies, it is quick, and it is the algorithm generally preferred for sorting.\n --&lt;Pick an element, say P (the pivot)\n-->Re-arrange the elements into 3 sub-blocks,\n1. those less than or equal to P (the left-block S1)\n2.P (the only element in the middle-block)\n3. those greater than or equal toP (the rightblockS2)\n-->Repeat the process recursively for the left- and right- sub-blocks. Return {quicksort(S1),P,quicksort(S2)}. (That is the results of quicksort(S1), followed by P, followed by the results of quicksort(S2))"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

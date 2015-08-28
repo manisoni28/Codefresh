@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/iconback5">
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="#include&lt;stdio.h&gt;\n#include&lt;conio.h&gt;\n#include&lt;math.h&gt;\nint max(int,int);\nvoid warshal(int p[10][10],int n){\nint i,j,k;\nfor(k=1;k&lt;=n;k++)\nfor(i=1;i&lt;=n;i++)\nfor(j=1;j&lt;=n;j++)\np[i][j]=max(p[i][j],p[i][k]&amp;&amp;p[k][j]);\n}\nint max(int a,int b){\nif(a&gt;b)\nreturn(a);\nelse\nreturn(b);\n}\nvoid main(){\nint p[10][10]={0},n,e,u,v,i,j;\nclrscr();\nprintf(&quot;\\n Enter the number of vertices:&quot;);\nscanf(&quot;%d&quot;,&amp;n);\nprintf(&quot;\\n Enter the number of edges:&quot;);\nscanf(&quot;%d&quot;,&amp;e);\nfor(i=1;i&lt;=e;i++){\nprintf(&quot;\\n Enter the end vertices of edge %d:&quot;,i);\nscanf(&quot;%d%d&quot;,&amp;u,&amp;v);\np[u][v]=1;\n}\nprintf(&quot;\\n Matrix of input data: \\n&quot;);\nfor(i=1;i&lt;=n;i++){\nfor(j=1;j&lt;=n;j++)\nprintf(&quot;%d\\t&quot;,p[i][j]);\nprintf(&quot;\\n&quot;);\n}\nwarshal(p,n);\nprintf(&quot;\\n Transitive closure: \\n&quot;);\nfor(i=1;i&lt;=n;i++){\nfor(j=1;j&lt;=n;j++)\nprintf(&quot;%d\\t&quot;,p[i][j]);\nprintf(&quot;\\n&quot;);\n}\ngetch();\n}" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

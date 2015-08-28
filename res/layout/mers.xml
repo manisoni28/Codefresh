@@ -1,0 +1,32 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Merge sort is a technique in which array is distributed in two parts and then those two parts into another two parts and so onuntill all elements gets separated and the pair is get sorted and then gets merge to form big array and this goes uptill all array elements get sorted.the procedure is followed in the picture given below.This algorithm has a complexity of O(n*log(n)) and is very effective sorting technique."
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+         <ImageView
+		      android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/merge" 
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+    </LinearLayout>
+</ScrollView>

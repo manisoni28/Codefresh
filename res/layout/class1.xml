@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="1.#include&#60;stdio.h&#62;\n2.void lsearch(int a[],int n,int m){\n3.    int i,f=0;\n4.    for(i=0;i&#60;n;i++){\n5.        if(a[i]==m){f=1;\n6.            printf(&quot;Element found&quot;);\n7.            break;\n8.        }\n9.    }\n10.    if(f==0)\n11.    printf(&quot;Not found&quot;);\n12.}\n13.int main(){\n14.   int a[1000],n,i,j,m;\n15.    printf(&quot;ENTER SIZE OF ARRAY  :&quot;);\n16.    scanf(&quot;%d&quot;,&#38;n);\n17.    printf(&quot;ENTER ELEMENTS OF ARRAY&quot;);\n18.    for(i=0;i&#60;n;i++)\n19.        scanf(&quot;%d&quot;,&#38;a[i]);\n20.    printf(&quot;Enter element to be searched:&quot;);\n21.    scanf(&quot;%d&quot;,&#38;m);\n22.    lsearch(a,n,m);\n23.return 0;\n24.}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

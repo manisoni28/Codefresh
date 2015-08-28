@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="  A pointer is a variable suitable for keeping memory addresses   of other variables, the values you assign to a pointer are   memory addresses of other variables (or other pointers).\nHow useful are pointers for scientific programming?  Probably   much less than C fans think, few algorithms used in scientific require pointers.\nIt is well-known that having unrestricted pointers in a programming language makes it difficult for the compiler to generate efficient code.\nC pointers are characterized by their value and data-type.The value is the address of the memory location the pointer points to, the type determines how the pointer will be incremented/decremented in pointer (or subscript) arithmetic.\nIt is recommended to focus a lot on pointers because it is one of the important things that has wide applications in coding.Many programs are there in program seciton just go through them."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A Linked List is like an array but it differs in some aspects.In array,there is continuous memory allocation but in linked list there is no continuous allocation of memory.As in array we have to firstly assign thse size of the array,which means that if u have a size of array as 1000 but your are giving only 5 values to input,so there is a loss of memory of 995 cells,but this is not in the case of linked list as memory is allocated in linked list dynamically using malloc()function also in data structures,there is huge application of linked list,we will discuss more about in classical section as it is bit difficult to implement them.But dont worry we are here to help you.Just go through our next section of CLASSICAL and it will help you a lot. "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >   
+		 <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:text="A linked list is a list of elements in which the elements of the list can be placed anywhere in memory, and these elements are linked with each other using an explicit link field, that is, by storing the address of the next element in the link field of the previous element"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />
+		   <ImageView
+		      android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linku" 
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            
+            >
+            
+        </ImageView>
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linkify" 
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            >
+            
+        </ImageView>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:text="this is a pseudo code for a push operation and above which the graphical representation is there.\nvoid Push(struct node** headRef, int data) {\nstruct node* newNode = malloc(sizeof(struct node));\nnewNode->data = data;\nnewNode->next = *headRef; 	// The '*' to dereferences back to the real\nhead*headRef = newNode; // ditto}\nvoid PushTest() {\nstruct node* head = BuildTwoThree();// suppose this returns the list {2, 3}\nPush(&#38;head, 1); 	// note the &#38;\nPush(&#38;head, 13);		// head is now the list {13, 1, 2, 3}\n}
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />
+		 
+		
+    </LinearLayout>
+</ScrollView>

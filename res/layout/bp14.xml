@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="1.#include&#60;stdio.h&#62;\n2.void print(int arr[3][3]){\n3. int i,j;\n4.for(i=0;i&#60;3;i++){\n5.    for(j=0;j&#60;3;j++)\n6.    printf(&quot;%d &quot;,arr[i][j]);\n7.	}\n8.}\n9.int main(){\n10.int arr[3][3],i,j;\n11.printf(&quot;Enter elements:&quot;);\n12.for(i=0;i&#60;3;i++)\n13.    for(j=0;j&#60;3;j++)\n14.    scanf(&quot;%d&quot;,&#38;arr[i][j]);\n15.    printf(&quot;Elements of array:&quot;);\n16.print(arr);\n17.return 0;\n18.}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

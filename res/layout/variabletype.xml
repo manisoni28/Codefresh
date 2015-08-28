@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="C Keywords\nC has the following simple keywords:
+auto\ndouble\nint\nstruct\n\ break\nelse\nlong\nswitch\ncase\nenum\nregister\ntypedef\nchar\nextern\nreturn\nunion\nconst\nfloat\nshort\nunsigned\ncontinue\nfor\nsigned\nvoid\ndefault\ngoto\nsizeof\nvolatile\ndo\nif\nstatic\nwhile"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

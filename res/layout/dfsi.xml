@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include&lt;stdio.h&gt;\n2.#include&lt;conio.h&gt;\n3.int a[20][20],reach[20],n;\n4.void dfs(int v){\n5.int i;\n6.reach[v]=1;\n7.for(i=1;i&lt;=n;i++)\n8.if(a[v][i] &amp;&amp; !reach[i]){\n9.printf(&quot;\\n %d-&gt;%d&quot;,v,i);\n10.dfs(i);\n11.}\n12.}\n13.void main(){\n14.int i,j,count=0;\n15.printf(&quot;\\n Enter number of vertices:&quot;);\n16.scanf(&quot;%d&quot;,&amp;n);\n17.for(i=1;i&lt;=n;i++){\n18.reach[i]=0;\n19.for(j=1;j&lt;=n;j++)\n20.a[i][j]=0;\n21.}\n22.printf(&quot;\\n Enter the adjacency matrix:\\n&quot;);\n23.for(i=1;i&lt;=n;i++)\n24.for(j=1;j&lt;=n;j++)\n25.scanf(&quot;%d&quot;,&amp;a[i][j]);\n26.dfs(1);\n27.printf(&quot;\\n&quot;);\n28.for(i=1;i&lt;=n;i++){\n29.if(reach[i])\n30.count++;\n}\n31.if(count==n)\n32.printf(&quot;\\n Graph is connected&quot;);\n33.else\n34.printf(&quot;\\n Graph is not connected&quot;);\n35.getch();\n}" 
+    android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="#include&#60;stdio.h&#62;\nvoid maxheapify(int a[],int i,int n){\n    int largest;\n    int l=2*i;int r=2*i+1;\n    if(l&#60;=n&#38;&#38;a[l]&#60;a[i])\n            largest=l;\n        else\n            largest=i;\n    if(r&#60;=n&#38;&#38;a[r]&#60;a[largest]){\n        largest=r;}\n    if(largest!=i){\n        int t=a[i];a[i]=a[largest];a[largest]=t;\n    maxheapify(a,largest,n);}\n}\nvoid buildmaxheap(int a[],int n){\n    int i=n/2;\n    for(i=n/2;i&#62;=1;i--){\n        maxheapify(a,i,n);\n        }\n}\nvoid print(int a[],int n){\n    int i;\n    for(i=1;i&#60;=n;i++)\n        printf(&quot;%d &quot;,a[i]);\n}\nvoid heapsort(int a[],int n){\n    int i,t;buildmaxheap(a,n);\n    for(i=n;i&#62;=1;i--){\n        t=a[1];a[1]=a[i];a[i]=t;\n        maxheapify(a,1,i-1);\n    }\n}\nvoid insert(int a[],int n){int i;\n        for(i=n/2;i&#62;=1;i=i/2){\n        maxheapify(a,i,n);}\n}\nint main(){\n    int a[100]={0},n,i,m,ch;\n    printf(&quot;Enter size:&quot;);\n    scanf(&quot;%d&quot;,&#38;n);\n    for(i=1;i&#60;=n;i++)\n        scanf(&quot;%d&quot;,&#38;a[i]);\n    printf(&quot;Enter 1 to start&quot;);\n    scanf(&quot;%d&quot;,&#38;m);\n    while(m!=0){\n        printf(&quot;Enter choice&quot;);\n        printf(&quot;1.built2.print3.heapsort4.add&quot;);\n        scanf(&quot;%d&quot;,&#38;ch);\n        switch(ch){\n        case 1:buildmaxheap(a,n);break;\n        case 2:print(a,n);break;\n        case 3:heapsort(a,n);break;\n        case 4:{int d;\n        printf(&quot;Enter value to be inserted:  &quot;);\n        scanf(&quot;%d&quot;,&#38;d);\n        if(n+1==101)\n            printf(&quot;array fill.&quot;);\n    else{n=n+1;\n        a[n]=d;insert(a,n);}break;}\n        default:printf(&quot;wrong choice&quot;);\n        }\n        printf(&quot;press 0 to exit n 1 to enter!&quot;);\n        scanf(&quot;%d&quot;,&#38;m);\n    }\n}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="1.#include&#60;stdio.h&#62;\n2.int main(){\n3.    int a[1000],n,i,j,val,h;\n4.    printf(&quot;ENTER SIZE OF ARRAY  :&quot;);\n5.    scanf(&quot;%d&quot;,&#38;n);\n6.    printf(&quot;ENTER ELEMENTS OF ARRAY&quot;);\n7.    for(i=0;i&#60;n;i++)\n8.        scanf(&quot;%d&quot;,&#38;a[i]);\n9.    for(i=0;i&#60;n;i++){\n10.        val=a[i];\n11.        h=i;\n12.        while(h&#62;0&#38;&#38;a[h-1]&#62;val){\n13.           a[h]=a[h-1];\n14.            h=h-1;\n15.            }\n16.            a[h]=val;\n17.        }\n18.            printf(&quot;The sorted array is&quot;);\n19.            for(i=0;i&#60;n;i++)\n20.                printf(&quot;%d &quot;,a[i]);\n21.    return 0;\n22.}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

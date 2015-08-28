@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >   
+		 <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:text=" We will like to tell you an efficient way to compute (a^b) mod n, where a and b are nonnegative integers and n is a positive integer and a^b means a has a power b.\nModular exponentiation is an essential operation in many primalitytesting routines and in the RSA public-key cryptosystem.\nThe method of repeated squaring solves this problem efficiently using the binary representation of b.\nLet bk, bk-1, ..., b1, b0 be the binary representation of b. (That is, the binary representation is k + 1 bits long, bk is the most significant bit, and b0 is the least significant bit.) \nThe  program given in program section computes (a^c) mod n as c is increased by doublings and incrementations from 0 to b."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />
+    </LinearLayout>
+</ScrollView>

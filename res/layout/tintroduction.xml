@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="First of All,We would like to tell why to make codes..It has a majority of applications in daily life,from your cell phones to tv and even nowadays almost every appliance is made up of code.\nFrom google to this app,all exists on code,you will love to know that all the games that you play on laptop,phones and tablets are composed of codes and by the help of these codes you can make your own also..\njust go through all the sections of this app and We can definately says that this will help in making you a top coder."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

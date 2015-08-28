@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="#include&#60;stdio.h&#62;\nint n,a[9],front=-1,rear=-1;\nvoid enqueue(int data){\n    if(((front==0)&#38;&#38;(rear==n-1))||(front==rear+1)){\n        printf(&quot;queue full&quot;);\n    }\n    else{ if(front==-1)front=0;\n            rear=(rear+1)%n;\n            a[rear]=data;\n    }\n}\nvoid dequeue(){\n    if(front==-1&#38;&#38;rear==-1)printf(&quot;queue empt&quot;);\n    else{\n        if(front==rear){front=-1;rear=-1;}\n        else{\n            front=(front+1)%n;\n        }\n    }\n}\nvoid display(){\n    int i;if(front==-1)\nprintf(&quot;Empty&quot;);\n    for(i=front;i!=rear+1;i=(i+1)%n)\n        printf(&quot;%d-&#62;&quot; ,a[i]);\n}\nint main(){\n    printf(&quot;Enter size&quot;);\n    scanf(&quot;%d&quot;,&#38;n);\n    int m;\n    do{\n        printf(&quot;Enter choice   &quot;);\n        printf(&quot;1.Enqueue2.Dequeue3.Display&quot;);\n        int d;scanf(&quot;%d&quot;,&#38;d);\n        switch(d){\n            case 1:{int da;\n                    printf(&quot;Enter data&quot;);\n                    scanf(&quot;%d&quot;,&#38;da);\n                    enqueue(da);break;}\n            case 2:dequeue();break;\n            case 3:display();break;\n        }\n        printf(&quot;Enter 0 to exit!&quot;);\n        scanf(&quot;%d&quot;,&#38;m);\n    }while(m!=0);\nreturn 0;\n}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

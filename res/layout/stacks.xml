@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A stack is either empty or it consists of two parts, a top element and stack (the remaining elements).\nStack is the First-In-Last-Out type data structure. The element that has entered last in stack is supposed to be at the Top of the stack.\nThe elements in a stack may be of any type, but all the elements in a given stack must be the same type.
+         
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_marginRight="35dp"
+        android:layout_margin="35dp"
+             />
+         <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/balance" 
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="How it will work?\n1.Make an empty stack\n2.Read symbols until the end of the file.\na)If the symbol is an opening symbol, push it onto the stack.\nb)If it is a closing symbol do the following.\ni)If the stack is empty, report an error.\nii)Otherwise, pop the stack. If the symbol popped is not the corresponding opening symbol, report an error.\n3.At the end of the file, if the stack is not empty, report an error.
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Priority queues\n---Store tasks using a partial ordering based on priority\n---Ensure highest priority task at head of queue\nHeaps are the underlying data structure of priority queues\nMain operations of Priority Queue\n--insert (i.e., enqueue)\n1.Dynamic insert\n2.specification of a priority level (0-high, 1,2.. Low)\n--deleteMin (i.e., dequeue)\n1.Finds the current minimum element (read: “highest priority”) in the queue, deletes it from the queue, and returns it\nPerformance goal is for operations to be “fast”\nBinary heap is a priority queue data structure.\nA binary heap is a complete binary tree\nEach level (except possibly the bottom most level) is completely filled\nThe bottom most level may be partially filled (from left to right)"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

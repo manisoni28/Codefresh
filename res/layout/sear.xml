@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="From a given sequence of numbers aur words aur charachters,if you want to search any specific element then you will be using search techniques for this.There are two types of searchings;-\n1.Linear Search\n2.Binary Search\nFor linear search worst case has the complexity of 0(N).While for Binary Search,the case has the complexity of 0(log N).\nFor Binary Search we should have an array that is already sorted.\nYou will ask why is so??\nThe algorithm on which it runs deals with mid value of array so if  the searching element is less than that of mid value then mid values are being searched and vice versa.\nYou will get how to implement these searching in program section."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

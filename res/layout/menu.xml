@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/scrollView1"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="100"
+    android:background="@drawable/back">
+
+    <Button
+        android:id="@+id/introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduction" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First C Program"
+        android:textStyle="bold"
+          android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         />
+    <Button
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Types"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memory \nand \nVariables"
+         android:textStyle="bold" 
+          android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp" />
+    <Button
+        android:id="@+id/keyr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C Keywords"
+         android:textStyle="bold"
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp" />
+    <Button
+        android:id="@+id/conver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type Casting"
+         android:textStyle="bold"  
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+         <Button
+        android:id="@+id/expri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expressions"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/ife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conditional \nStatements"
+         android:textStyle="bold"
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp" />
+    <Button
+        android:id="@+id/loops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loops"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/functi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Functions"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pointers"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/arr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arrays"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/struc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Structures"
+         android:textStyle="bold" 
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/linki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linked Lists"
+        
+         android:textStyle="bold"
+           android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+        />
+    
+    </LinearLayout>
+  </ScrollView>

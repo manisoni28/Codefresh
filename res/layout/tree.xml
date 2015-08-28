@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Tree is a data structure which has a lot of application in finding pattern and in graph theory and Graphs are used for many algo which will be in algorithm section.Here are some basic properties of trees which are listed below:-"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+         <ImageView
+		      android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/tree" 
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Property					Value
+Number of nodes		9\nHeight							5\nRoot Node					A\nLeaves							C,D,F,H,I\nNumber of levels		4\nAncestors of  H\n			ALL(EXCEPT I)\nDescendants of  B		D,E,F,G,H,I\nSiblings of  E				D,F
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

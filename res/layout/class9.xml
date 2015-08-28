@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="#include &lt;stdio.h&gt;\n#include &lt;stdlib.h&gt;\nstruct node{\nint a;\nstruct node *next;\n};\n void generate(struct node **, int);\nvoid search(struct node *, int);\nvoid delete(struct node **);\nint main(){\nstruct node *head = NULL;\nint key, num;\nprintf(&quot;ENTER SIZE OF ARRAY : &quot;);\nscanf(&quot;%d&quot;, &amp;num);\nprintf(&quot;\\nENTER ELEMENTS OF ARRAY\\n&quot;);generate(&amp;head, num);\nprintf(&quot;\\nEnter element to be searched: &quot;);\nscanf(&quot;%d&quot;, &amp;key);\nsearch(head, key);\ndelete(&amp;head);\nreturn 0;\n}\nvoid generate(struct node **head, int num){\nint i;\nstruct node *temp;\nfor (i = 0; i &lt; num; i++){\ntemp = (struct node *)malloc(sizeof(struct node));\ntemp-&gt;a = rand() % num;\nif (*head == NULL){\n*head = temp;\ntemp-&gt;next = NULL;\n}\nelse{\ntemp-&gt;next = *head;\n*head = temp;\n}\nprintf(&quot;%d  &quot;, temp-&gt;a);\n}\n}\nvoid search(struct node *head, int key){\nwhile (head != NULL){\nif (head-&gt;a == key){\nprintf(&quot;key found\\n&quot;);\nreturn;\n}\nhead = head-&gt;next;\n}\nprintf(&quot;Key not found\\n&quot;);\n}\nvoid delete(struct node **head){\nstruct node *temp;\nwhile (*head != NULL){\ntemp = *head;\n*head = (*head)-&gt;next;\nfree(temp);\n}\n}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

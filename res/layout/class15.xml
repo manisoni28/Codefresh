@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+                android:id="@+id/tw"
+                android:layout_width="1028dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="35dp"
+                android:layout_weight="0.96"
+                android:text="#include&lt;stdio.h>\nstruct node{\n    struct node *left,*right;\n    int data;\n};\nstruct node* create(int data) {\nstruct node* temp = malloc(sizeof(struct node));\ntemp->data = data;\ntemp->left = NULL;\ntemp->right = NULL;\nreturn(temp);\n}\nstruct node* insert(struct node* temp, int data) {\nif (temp == NULL)\n	return(create(data));\nelse if (data &lt; temp->data)\n	temp->left = insert(temp->left, data);\nelse\n	temp->right = insert(temp->right, data);\nreturn(temp);\n}\nvoid print(struct node* temp) {\nif (temp == NULL) return;\nprint(temp->left);\nprintf(&quot;  %d   &quot;, temp->data);\nprint(temp->right);\n}\nint size(struct node* temp) {\n    if (temp==NULL) {\n	return(0);\n    }\n    else {\n	return(size(temp->left)+1+size(temp->right));\n   }\n}\nint maxNodes(struct node* temp) {\nif (temp==NULL) {\n	return(0);\n	} else {\nint leftNode = maxNodes (temp->left);\nint rightNode = maxNodes (temp->right);\nif (leftNode > rightNode)\n	return(leftNode+1);\nelse\n	return(rightNode+1);\n}\n}\nstruct node* minValue(struct node* temp) {\nstruct node* temp1 = temp;\nwhile (temp1->left != NULL) {\n	temp1 = temp1->left;\n}\nreturn(temp1);\n}\nvoid printPostorder(struct node* temp) {\nif (temp == NULL) return;\nprint(temp->left);\nprint(temp->right);\nprintf(&quot;%d &quot;, temp->data);\n}\nstruct node* delete(struct node *temp,int d){\n    if(temp==NULL)return temp;\n    if(d&lt;temp->data)\n        temp->left=delete(temp->left,d);\n    else if(d>temp->data)\n        temp->right=delete(temp->right,d);\n    else{printf(&quot;%d&quot;,temp->data);\n        if(temp->left==NULL&amp;&amp;temp->right==NULL){\n            struct node *t=temp->right;\n            free(temp);\nreturn t;\n        }\n        else if(temp->right==NULL){\n            struct node *t=temp->left;\n            free(temp);return t;\n        }\n        struct node *u=minValue(temp->right);\n        printf(&quot;b=%d&quot;,u->data);\n        temp->data=u->data;\n        temp->right=delete(temp->right,u->data);\n    }\n    return temp;\n}\nint main(){int m,s;struct node *head=NULL;\ndo{ printf(&quot;1.insert2.print3.size4.maxNodes5.minValue6.printpostfix7.delete&quot;&quot;);\n    printf(&quot;Enter choice&quot;);\n    scanf(&quot;%d&quot;,&amp;m);\n    switch(m){\n        case 1:{int d;\n            printf(&quot;Enter data&quot;);\n            scanf(&quot;%d&quot;,&amp;d);\n            head=insert(head,d);printf(&quot;head=%d&quot;,head->data);break;\n        }\n        case 2:print(head);break;\n        case 3:{int k;k=size(head);printf(&quot;size=%d&quot;,k);break;}\n        case 4:{int o=maxNodes(head);printf(&quot;%d\n&quot;,o);break;}\n        case 5:{struct node* b=minValue(head);printf(&quot;%d&quot;,b->data);break;}\n        case 6:printPostorder(head);break;\n        case 7:{int d;scanf(&quot;%d&quot;,&amp;d);head=delete(head,d);break;}\n    }\n    printf(&quot;Press -1 to exit or 0 to continue!&quot;);\n    scanf(&quot;%d&quot;,&amp;s);\n    }while(s!=-1);\n}"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFF" />
+
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

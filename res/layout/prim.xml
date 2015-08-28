@@ -1,0 +1,26 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >   
+		 <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:text="--&gt;Let G = (V, E) be an undirected graph.\n--&gt;A connected undirected graph that contains no cycles is a tree\n--&gt;A subgraph of G that contains all the vertices of G and is a tree is a spanning tree \n--&gt;A spanning tree has n vertices and n-1 edges.The spanning tree that costs the least is called the minimum-cost spanning tree.\nThere are many approaches to computing a minimum spanning tree. We could try to detect cycles and remove edges, but the two algorithms we will study build them from the bottom-up in a greedy fashion.\n1.Prim’s Algorithm\n2.Kruskal’s Algorithm.\nIn this lesson we will learn about prims and in next lesson about kruskal.\nPrim’s algorithm finds a minimum cost spanning tree by selecting edges from the graph one-by-one as follows:\n*It starts with a tree, T, consisting of a single starting vertex, x.\n*Then, it finds the shortest edge originating from x that connects T to the rest of the graph (i.e., a vertex not in the tree T).\n*It adds this edge and the new vertex to the tree T.\n*It then picks the shortest edge originating from the revised tree T that also connects T to the rest of the graph and repeats the process 
+            
+            
+
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1.#include &lt;stdio.h&gt;\n2.#include &lt;conio.h&gt;\n3.#define infinity 999\n4.void dij(int n,int v,int cost[10][10],int dist[]){\n5.int i,u,count,w,flag[10],min;\n6.for(i=1;i&lt;=n;i++)\n7.flag[i]=0,dist[i]=cost[v][i];\n8.count=2;\n9.while(count&lt;=n){\n10.min=99;\n11.for(w=1;w&lt;=n;w++)\n12.if(dist[w]&lt;min &amp;&amp; !flag[w])\n13.min=dist[w],u=w;\n14.flag[u]=1;\n15.count++;\n16.for(w=1;w&lt;=n;w++)\n17.if((dist[u]+cost[u][w]&lt;dist[w]) &amp;&amp; !flag[w])\n18.dist[w]=dist[u]+cost[u][w];\n19.}\n20.} \n21.void main(){\n22.int n,v,i,j,cost[10][10],dist[10];\n23.clrscr();\n24.printf(&quot;\\n Enter the number of nodes:&quot;);\n25.scanf(&quot;%d&quot;,&amp;n);\n26.printf(&quot;\\n Enter the cost matrix:\n&quot;);\n27.for(i=1;i&lt;=n;i++)\n28.for(j=1;j&lt;=n;j++){\n29.scanf(&quot;%d&quot;,&amp;cost[i][j]);\n30.if(cost[i][j]==0)\n31.cost[i][j]=infinity;\n}\n32.printf(&quot;\\n Enter the source matrix:&quot;);\n33.scanf(&quot;%d&quot;,&amp;v);\n34.dij(n,v,cost,dist);\n35.printf(&quot;\\n Shortest path:\\n&quot;);\n36.for(i=1;i&lt;=n;i++)\n37.if(i!=v)\n38.printf(&quot;%d-&gt;%d,cost=%d\\n&quot;,v,i,dist[i]);\ngetch();\n39.}" 
+    android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" android:layout_margin="35dp"/>
+</LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+                	      	
+            </FrameLayout>
+     
+        </LinearLayout>
+    </TabHost>
+    
+  
+
+ 
+
+</LinearLayout>

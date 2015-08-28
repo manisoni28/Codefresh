@@ -1,0 +1,28 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5">"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+		 <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:text="FIRST C PROGRAM.\nHow to run C program?\nThere are online sites to check your codes like ideone.com or you can use of one the AIDE to run your programs most widely used are Codeblocks,Dev C++.\n#include &lt;stdio.h&gt;
+int main()
+{
+    printf(&quot;HELLO WORLD&quot;);
+    return 0;
+}\nIn the above program we have #include &lt;stdio.h&gt; which means that it is a header file which is required for I/O purposes.\nthen is the main() without main() program is nothing as it is like a heart for program anything we have to do we will do it in main().Then in the next line we are having printf() which is a function to print the value on to the console.Similarly scanf() is also there which is having a syntax of scanf(&quot;%d&quot;,&#38;number);\nwe will learn more about these functions in program section"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+            />
+		
+    </LinearLayout>
+</ScrollView>

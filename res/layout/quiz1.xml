@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/iconback5" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="TIME LIMIT\n10 MINUTES"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textStyle="bold"
+            android:textColor="#F712" 
+        android:layout_margin="35dp"
+        android:gravity="center"
+             />
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="1.To print out a and b given below, which of the following printf() statement will you use?\n#include&lt;stdio.h&gt;\n\nfloat a=3.14;\ndouble b=3.14;\n
+            "
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	printf(&quot;%f %lf&quot;, a, b);\nB.	printf(&quot;%Lf %f&quot;, a, b);\nC.	printf(&quot;%Lf %Lf&quot;, a, b);\nD.	printf(&quot;%f %Lf&quot;, a, b);\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="2.Which of the following special symbol allowed in a variable name?\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	* (asterisk)\nB.	| (pipeline)\nC.	- (hyphen)\nD.	_ (underscore)\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="3.How would you round off a value from 1.66 to 2.0?\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	ceil(1.66)\nB.	floor(1.66)\nC.	roundup(1.66)\nD.	roundto(1.66)\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="4.By default a real number is treated as a\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	float\nB.	double\nC.	long double\nD.	far double\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="5.When we mention the prototype of a function?\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+   
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	Defining\nB.	Declaring\nC.	Prototyping\nD.	Calling\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6.Range of double is -1.7e-38 to 1.7e+38 (in 16 bit platform - Turbo C under DOS)\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+   
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	True\nB.	False\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="7.Declare the following statement?\n&quot;A pointer to an array of three chars&quot;.\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+       
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	char *ptr[3]();\nB.	char (*ptr)*[3];\nC.	char (*ptr[3])();\nD.	char (*ptr)[3];\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="8.What do the following declaration signify?\n\nvoid *cmp();\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	cmp is a pointer to an void type.\nB.	cmp is a void type pointer variable.\nC.	cmp is a function that return a void \n        pointer.\nD.	cmp function returns nothing.\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="9.What do the following declaration signify?\nchar **argv;\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A.	argv is a pointer to pointer.\nB.	argv is a pointer to a char pointer.\nC.	argv is a function pointer.\nD.	argv is a member of function pointer.\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"
+             /><TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="10.What is (void*)0?\n\n"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FFFF" 
+        android:layout_marginLeft="35dp"
+             /><TextView 
+             android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:text="A.	Representation of NULL pointer\nB.	Representation of void pointer\nC.	Error\nD.	None of above"
+             android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FA34" 
+        android:layout_marginLeft="35dp"
+        android:gravity="center_vertical"/>
+    </LinearLayout>
+</ScrollView>

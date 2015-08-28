@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+<TextView
+            android:id="@+id/tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:text="1.#include&#60;stdio.h&#62;\n2. void quick(int x[],int p,int r){\n3.    if(p&#60;r){\n4.    int q;\n5.    q=part(x,p,r);\n6.    quick(x,p,q-1);\n7.    quick(x,q+1,r);\n8. }\n9. }\n10.int part(int x[],int p,int r){\n11.    int s=x[r];\n12.    int i=p-1,j,t;\n13.    for(j=p;j&#60;r;j++){\n14.        if(x[j]&#60;=s){\n15.            i=i+1;\n16.            t=x[i];\n17.             x[i]=x[j];\n18.            x[j]=t;\n19.        }\n20.    }\n21.    t=x[i+1];\n22.    x[i+1]=x[r];\n23.    x[r]=t;\n24.    return (i+1);\n25.}\n26.int main(){\n27.  int x[20],size,i;\n28.  printf(&quot;Enter size of the array: &quot;);\n29.  scanf(&quot;%d&quot;,&#38;size);\n30.  printf(&quot;Enter elements of array&quot;);\n31.  for(i=0;i&#60;size;i++)\n32.    scanf(&quot;%d&quot;,&#38;x[i]);\n33.  quick(x,0,size-1);\n34.  printf(&quot;The sorted array is: &quot;);\n35.  for(i=0;i&#60;size;i++)\n36.    printf(&quot;%d &quot;,x[i]);\n37.  return 0;\n38.}"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp" />
+      
+    </LinearLayout>
+</ScrollView>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+				<WebView
+				    android:id="@+id/web"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+			
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

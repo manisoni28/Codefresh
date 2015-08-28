@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/iconback5">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+                 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tab1">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="An array is contiguous memory allocation of identical data types.There are multiple dimensional array.But all the arrays can be seen in the context of 1-D array. We will use 2D arrays in the following text instead of general   N-dimensional arrays, they can illustrate the subtle points   involved with using arrays and pointers in C, and the arithmetic   will be more manageable.\nA 2D array in C is treated as a 1D array whose elements are 1D   arrays (the rows).\nFor example, a 4x3 array of T (where &quot;T&quot; is some data type) may   be declared by:  &quot;T  mat[4][3]&quot;,  and described by the following scheme:\n\nmat==mat[0]-->a[0][0]||a[0][1]||a[0][2]\n           mat[1]-->a[1][0]||a[1][1]||a[1][2]\n           mat[2]-->a[2][0]||a[2][1]||a[2][2]\n           mat[3]-->a[3][0]||a[3][1]||a[3][2]\n\nThe array elements are stored in memory row after row, so the   array equation for element &quot;mat[m][n]&quot; of type T is:\naddress(mat[i][j]) = address(mat[0][0]) + (i * n + j) * size(T)\naddress(mat[i][j]) = address(mat[0][0]) + i * n * size(T)    + j * size(T)\naddress(mat[i][j]) = address(mat[0][0]) + i * size(row of T) + j * size(T) "
+            android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+    </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

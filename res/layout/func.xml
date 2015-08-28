@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/iconback5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="A function is a self-contained block of statements that perform a coherent task of some kind.\nEvery C program can be thought of as a collection of these functions.\nWhy to use functions?\nFunctions as said before are used to make a big program into small modules.\nIt will be highly useful in Debugging your codes.\nLet us see an example:-\nmain( ) {\nmessage( ) ;\nprintf ( &quot;YO.&quot; ) ; \n}\nmessage( ) {\nprintf ( &quot;YIPPIE,&quot; ) ; \n}\nAnd here’s the output...\nYIPPIE,YO.\nHere in this program firstly main() function gets call and afterwards message() function gets call and thus YIPPIE, gets printed first and then as the message has no return value value so it is considered as void and hence then only YO. gets printed."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF" 
+        android:layout_margin="35dp"
+             />
+    </LinearLayout>
+</ScrollView>

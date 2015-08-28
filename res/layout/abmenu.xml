@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/scrollView1"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+      android:background="@drawable/back" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="100"
+   >
+
+    <Button
+        android:id="@+id/dfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEPTH FIRST \nSEARCH" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     <Button
+        android:id="@+id/bfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BREADTH FIRST \nSEARCH" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     <Button
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODULAR\nEXPONENTIATION" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     <Button
+        android:id="@+id/china"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHINESE \nREMAINDER\nTHEOREM" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     
+    <Button
+        android:id="@+id/floyd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FLOYD \nWARSHALL" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     <Button
+        android:id="@+id/prim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRIMS" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     <Button
+        android:id="@+id/kruk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KRUSKAL" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     
+     <Button
+        android:id="@+id/dijk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIJKSTRA" 
+         android:textStyle="bold"
+         android:layout_weight="7.14"
+         android:background="@drawable/hellosms"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"/>
+     
+    
+    </LinearLayout>
+  </ScrollView>
